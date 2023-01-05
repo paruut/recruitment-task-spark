@@ -1,0 +1,481 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: rgba(235, 233, 233, 0.863);
+}
+
+header {
+  display: flex;
+}
+
+.left-bg {
+  background: white;
+  width: 65%;
+  height: 85vh;
+  border-radius: 0 0 50px 0;
+
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+.logo {
+  background-color: rgba(235, 233, 233, 0.863);
+  width: 170px;
+  height: 160px;
+  border-radius: 0 0 50px 0;
+  display: flex;
+  align-items: center;
+
+  h1 {
+    padding: 4rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 2rem;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: #1d1d1d;
+    font-weight: 500;
+  }
+
+  a:nth-child(2) {
+    color: #0f6eff;
+  }
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+
+  i {
+    font-size: 24px;
+  }
+
+  p {
+    color: #a7a7a7;
+    padding-right: 0.5rem;
+  }
+
+  .contact-number {
+    color: #0f6eff;
+  }
+
+  span.language {
+    display: flex;
+    gap: 5px;
+  }
+
+  .language {
+    margin-left: 20px;
+
+    .fa {
+      cursor: pointer;
+    }
+  }
+}
+
+.contact-us {
+  border-radius: 30px;
+  border-color: transparent;
+  border: 1px solid #0f6eff;
+  padding: 1rem 2rem;
+  color: #0f6eff;
+  font-weight: 500;
+}
+
+.right-bg {
+  width: 35%;
+  height: 80vh;
+
+  .right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding-top: 3.5rem;
+    justify-content: center;
+  }
+}
+
+.left-description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 0 0 10rem;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    color: #1d1d1d;
+    line-height: 1.3;
+    padding-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    color: #929292;
+    padding-top: 1rem;
+  }
+}
+
+.play-line {
+  width: 201px;
+  height: 2px;
+  background-color: #0f6eff;
+  margin: -1.65rem 0 0 -10rem;
+}
+
+.play-btn {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  padding-top: 3rem;
+
+  .circle {
+    width: 140px;
+    height: 140px;
+    border-radius: 70px;
+    background-color: transparent;
+    border: 2px solid #0f6eff;
+    position: relative;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 20px 0 20px 35px;
+    border-color: transparent transparent transparent #0f6eff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 90px;
+    margin-left: 50px;
+    background-clip: content-box;
+    cursor: pointer;
+  }
+}
+
+.play-btn-description {
+  p {
+    color: #0f6eff;
+    font-weight: 500;
+    padding: 2.4rem 0 0 10rem;
+  }
+
+  p span {
+    border-bottom: 1px solid #0f6eff;
+  }
+}
+
+.line {
+  width: 1px;
+  height: 21px;
+  background-color: #0f6eff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1.8rem 0 0 3.3rem;
+}
+
+.block-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+  margin: 5rem 6.5rem 0 0;
+
+  .first-block {
+    width: 350px;
+    height: 250px;
+    background-color: #979696;
+    border-radius: 50px 0 50px 50px;
+  }
+}
+
+.down-blocks-flex {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+
+  .second-block {
+    width: 250px;
+    height: 350px;
+    background-color: #979696;
+    border-radius: 50px 50px 0 50px;
+    position: relative;
+  }
+
+  .third-block {
+    width: 350px;
+    height: 250px;
+    background-color: #979696;
+    border-radius: 50px 50px 50px 0;
+  }
+}
+
+.hero-section {
+  margin: 4rem 15rem;
+
+  .hero-topic {
+    display: flex;
+
+    p {
+      font-size: 14px;
+      color: #0f6eff;
+      font-weight: 500;
+      letter-spacing: 1.1px;
+      padding-bottom: 0.4rem;
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      font-weight: 600;
+      padding-bottom: 5rem;
+    }
+  }
+
+  .hero-line {
+    width: 220px;
+    height: 3px;
+    background-color: #0f6eff;
+    margin: 3.2rem 0 0 6rem;
+  }
+
+  .hero-news {
+    display: flex;
+    gap: 100px;
+  }
+
+  .hero-news-blog-first {
+    display: flex;
+    flex-direction: column;
+    background: rgb(22, 22, 22);
+    color: white;
+    width: 300px;
+    height: 360px;
+    border-radius: 40px 40px 0 40px;
+    position: relative;
+  }
+}
+
+.hero-news-blog-person p {
+  font-size: 14px;
+  padding: 2rem 0 0.5rem 2.5rem;
+  font-weight: 500;
+}
+
+.hero-news-blog-date p {
+  font-size: 14px;
+  padding: 0 0 0.5rem 2.5rem;
+  font-weight: 500;
+  color: #c4c0c0;
+}
+
+.hero-news-blog-description p {
+  font-size: 18px;
+  padding: 1rem 0 0.5rem 2.5rem;
+  font-weight: 500;
+}
+
+.more-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background-color: transparent;
+  border: 2px solid #aeafb1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4rem 0 0.5rem 2.5rem;
+  cursor: pointer;
+
+  .more-line {
+    width: 220px;
+    height: 1px;
+    background: rgb(233, 232, 232);
+    position: absolute;
+    left: -190px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  span {
+    border-bottom: 1px solid #aeafb1;
+  }
+}
+
+.hero-news-blog-paul-hary {
+  display: flex;
+  flex-direction: column;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  width: 300px;
+  height: 360px;
+  border-radius: 40px 40px 0 40px;
+  position: relative;
+}
+
+.personal-name p {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1.1px;
+}
+
+.personal-date p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #797979;
+}
+
+.hero-news-blog-paul-hary-topic p {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 1rem 0 0.5rem 2.5rem;
+}
+
+.hero-news-blog-paul-hary-description p {
+  font-size: 14px;
+  padding: 0.6rem 0 0.5rem 2.5rem;
+  color: #a0a0a0;
+}
+
+.hero-news-blog-paul-hary-read-more p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #0f6eff;
+  padding: 0.6rem 0 0 2.5rem;
+  cursor: pointer;
+
+  span {
+    border-bottom: 1px solid #0f6eff;
+  }
+}
+
+.personal-flex {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 2rem 0 2rem 2.5rem;
+  gap: 20px;
+}
+.person-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #919191;
+}
+
+.hero-blog-paul-hary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.personal-line {
+  width: 220px;
+  height: 1px;
+  background-color: #e2e3e6;
+  margin: 0 auto;
+}
+
+.white-circle {
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  left: 160px;
+}
+
+.second-block-circle {
+  width: 220px;
+  height: 220px;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  top: 260px;
+  left: 25px;
+
+  .circle-white-line {
+    width: 250px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 130px;
+    left: -140px;
+  }
+}
+
+.dot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: absolute;
+  top: 0;
+  left: 260px;
+
+  .dot-row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .dot {
+    width: 5px;
+    height: 5px;
+    background-color: rgba(218, 218, 218, 0.849);
+    border-radius: 50%;
+  }
+}
+
+.blue-dot {
+  background-color: #0f6eff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 212px;
+  left: 90px;
+}
+
+.gray-dot-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: absolute;
+  top: 0;
+  left: 400px;
+
+  .gray-dot-row {
+    display: flex;
+    gap: 15px;
+  }
+
+  .gray-dot {
+    width: 6px;
+    height: 6px;
+    background-color: rgba(184, 184, 184, 0.849);
+    border-radius: 50%;
+  }
+}
